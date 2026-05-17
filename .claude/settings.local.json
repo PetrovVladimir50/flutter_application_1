@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(New-Item -ItemType Directory -Force -Path \"C:\\\\Users\\\\Admin\\\\Desktop\\\\test app flutter\\\\flutter_application_1\\\\assets\\\\images\")",
+      "Bash(flutter analyze *)",
+      "Bash(flutter pub *)"
+    ]
+  }
+}
