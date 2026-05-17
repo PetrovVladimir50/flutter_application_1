@@ -1,17 +1,68 @@
-# flutter_application_1
+# Nike Store — мобильное приложение интернет-магазина кроссовок
 
-A new Flutter project.
+> Учебный проект по дисциплине «Мобильная разработка»  
+> 4 курс, производственная практика
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## О проекте
 
-A few resources to get you started if this is your first Flutter project:
+**Nike Store** — мобильное приложение интернет-магазина кроссовок, разработанное на фреймворке Flutter. Приложение реализует полный пользовательский сценарий: от просмотра каталога товаров до оформления и оплаты заказа.
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Функциональность
+
+| Экран | Описание |
+|-------|----------|
+| **Главная** | Баннер-карусель с автопрокруткой, сетка товаров, добавление в корзину |
+| **Корзина** | Список товаров, выбор размера, управление количеством |
+| **Оформление заказа** | Ввод адреса доставки, выбор способа оплаты, итоговая сумма |
+| **Успешная оплата** | Подтверждение заказа, возврат в магазин |
+| **Профиль** | Статистика пользователя, способ оплаты, меню настроек |
+| **Редактирование профиля** | Изменение имени и фамилии, смена фото |
+
+---
+
+---
+
+## Структура проекта
+
+```
+lib/
+├── main.dart                      # Точка входа, MainScreen с навигацией
+├── app_state.dart                 # Глобальное состояние (корзина, профиль)
+├── models/
+│   └── product.dart               # Модель товара и каталог
+├── screens/
+│   ├── home_screen.dart           # Главный экран с каталогом
+│   ├── cart_screen.dart           # Корзина
+│   ├── checkout_screen.dart       # Оформление заказа
+│   ├── success_screen.dart        # Успешная оплата
+│   ├── profile_screen.dart        # Профиль пользователя
+│   └── edit_profile_screen.dart   # Редактирование профиля
+└── widgets/
+    └── product_card.dart          # Карточка товара
+
+assets/
+└── images/
+    ├── shoe_1.png                 # NIKE AIR FORCE 1
+    ├── shoe_2.png                 # NIKE AIR FORCE 1 HIGH
+    ├── shoe_3.png                 # NIKE AIR FORCE 1 Jordan
+    ├── shoe_4.png                 # NIKE AIR FORCE 1
+    ├── banner_1.png               # Баннер карусели 1
+    ├── banner_2.png               # Баннер карусели 2
+    ├── banner_3.png               # Баннер карусели 3
+    └── avatar.png                 # Фото профиля
+```
+
+---
+
+---
+
+## Автор
+
+**Студент 4 курса Петров Владимир**  
+Специальность: Мобильная разработка / Информационные технологии
+
+
